@@ -1,0 +1,79 @@
+@media(min-width:468px)
+{
+.container-1
+{
+    display:flex;/*for using flexbox*/
+    
+    /*use align-items for movement along y-axis*/
+    align-items:stretch;/*default*/
+    align-items:flex-end;/**/
+    align-items:center;
+    align-items:flex-start; 
+
+    /*use flex-direction for organising items in row or column direction*/
+    flex-direction: row;
+    /*flex-direction: column;*/
+
+}
+}
+.container-1 div
+{
+    border:1px #ccc solid;/*for setting border*/
+}
+
+.box-1
+{
+  flex:2;/*more the flex more the space used by this*/
+  order:2;  /*order is for putting box-1 at 3rd position */
+}
+.box-2
+{
+  flex:1;
+  order:1;  
+}
+.box-3
+{
+  flex:1;
+  order:3;  
+}
+
+@media(min-width:468px)
+{
+.container-2
+{
+    display:flex;
+    /*justify-content is used for movement along x-axis*/
+    justify-content: flex-start;/*this is default*/
+    justify-content: flex-end;/*this is for placing items at end*/
+    justify-content: center;/*this is for placing items at center*/
+    justify-content: space-around;/*also adds margin to the sides*/
+    justify-content: space-between;/* gives margin*/
+    
+}
+}
+
+.container-2 div
+{
+    border:1px #ccc solid;/*for giving border */
+}
+
+.container-2-box
+{
+    flex-basis:20%;/*alternative of width does same thing as width*/
+}
+
+.container-3
+{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.container-3 div
+{
+    border:1px #ccc solid;
+}
+
+.container-3-box
+{
+    flex-basis:12%;
+}
